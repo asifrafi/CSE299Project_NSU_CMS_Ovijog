@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 
 const userSchema = new mongoose.Schema({
   googleID: {
-    type: String,
+    type: String, // need to work on it. not working atm
   },
   email: {
     type: String,
