@@ -1,9 +1,26 @@
 
 # NSU Ovijog - CMS For North South University
 
+NSU Ovijog is a complaint management system designed specifically for North South University (NSU) in Bangladesh. It provides a secure and user-friendly platform for NSU students, faculty, and staff to submit complaints and have them addressed in a timely and efficient manner.
+#### Features
 
+* User authentication and management system
+* User-friendly complaint submission form
+* Ability to upload evidence to support complaints
+* Reviewer dashboard for managing and responding to complaints
+* Automated email notifications for status updates on complaints
+* Secure storage of complaint data in MongoDB
 
-## Please Read This MarkDown File before running NSU Ovijog
+#### Tech Stack
+* Frontend: React (Next.js)
+* Backend: Express.js, Node.js
+* Database: MongoDB
+* Cloud storage: Cloudinary
+* Authentication: JWT, BCrypt
+* Hosting: Not Decided Yet
+* Android App: Java,REST API,Gradle (Planned for Future) 
+
+#### Installation 
 
 
 <p style="font-size:140%;text-align: left;font-weight:bold;font-family:times">Operating Environments</p>
@@ -20,17 +37,24 @@
 
 [Install NPM](https://www.npmjs.com/)
 
-<p style="font-size:140%;text-align: left;font-weight:bold;font-family:times">Run NSU Ovijog</p>
-<p style="text-align: left;font-family:arial;">
-    In a PC That has Node Already installed . We first need to run command "npm i"
-</p>
+##### Procedure
+To install and run the NSU Ovijog application locally, follow these steps:
 
-<p style="text-align: left;font-family:arial;">
-  
-After That we need to add "npm run dev" command and our website will be up and running in http://localhost:3000/login
-</p>
+* Clone the repository to your local machine using Git.
+* Install the required dependencies by running npm install in both the client and server directories.
+* Create a .env file in the server directory with the necessary environment variables.
+* Run npm run dev in the server directory to start the backend server and npm run dev in the client directory to start the frontend server.
+* Access the application at http://localhost:3000.
 
-Thank you,
+#### Contributor
 Asif Haider Rafi
+Monirul Abdin Seum
+
+#### Contact 
+If you have any questions or feedback about NSU Ovijog, please contact us at 
+Asif Haider Rafi 
+Education Email: asif.rafi1@northsouth.edu
+Personal Email: asifhaiderrafi@protonmail.com
+
 ### This is still a work in progress project. Will finalize it before June,2023
 
