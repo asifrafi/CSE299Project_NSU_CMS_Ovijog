@@ -49,6 +49,7 @@ To install and run the NSU Ovijog application locally, follow these steps:
 #### Contributor
 Asif Haider Rafi <br>
 Monirul Abdin Seum
+#### Academic Disclosure 
 Note: This Is a University Project from North South University <br>
 Course: CSE299 <br> 
 Faculty: Tanzilah Noor Shabnam
