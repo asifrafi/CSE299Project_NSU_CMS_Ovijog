@@ -52,7 +52,9 @@ Monirul Abdin Seum
 #### Academic Disclosure 
 Note: This Is a University Project from North South University <br>
 Course: CSE299 <br> 
-Faculty: Tanzilah Noor Shabnam
+Department: ECE Department <br>
+Faculty Member: Tanzilah Noor Shabnam <br>
+Semester: Spring 2023 <br> 
 #### Contact 
 If you have any questions or feedback about NSU Ovijog, please contact us at 
 Asif Haider Rafi 
