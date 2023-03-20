@@ -49,11 +49,13 @@ To install and run the NSU Ovijog application locally, follow these steps:
 #### Contributor
 Asif Haider Rafi <br>
 Monirul Abdin Seum
-
+Note: This Is a University Project from North South University <br>
+Course: CSE299 <br> 
+Faculty: Tanzilah Noor Shabnam
 #### Contact 
 If you have any questions or feedback about NSU Ovijog, please contact us at 
 Asif Haider Rafi 
-Education Email: asif.rafi1@northsouth.edu
+Education Email: asif.rafi1@northsouth.edu <br>
 Personal Email: asifhaiderrafi@protonmail.com
 
 ### This is still a work in progress project. Will finalize it before June,2023
