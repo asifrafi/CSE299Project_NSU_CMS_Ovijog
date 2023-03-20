@@ -47,7 +47,7 @@ To install and run the NSU Ovijog application locally, follow these steps:
 * Access the application at http://localhost:3000.
 
 #### Contributor
-Asif Haider Rafi
+Asif Haider Rafi <br>
 Monirul Abdin Seum
 
 #### Contact 
