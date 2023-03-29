@@ -9,7 +9,7 @@ const sendEmail = require('../utilsServer/email');
 
 exports.login = catchAsync(async (req, res, next) => {
   //console.log(req.body.user);
-  const { email, password } = req.body.user;
+  const { email, password } = req.body.user; // slightly edited so that admin can add helper accounts
 
   //1)check if email and password exist
   if (!email || !password) {
