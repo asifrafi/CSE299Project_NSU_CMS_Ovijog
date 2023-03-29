@@ -177,7 +177,7 @@ function RegisterAccount() {
             loading={userEmailLoading}
             error={!userEmailAvailable}
             label="Email"
-            placeholder="NSU Email"
+            placeholder="Email"
             name="email"
             value={email}
             onChange={(e) => {
