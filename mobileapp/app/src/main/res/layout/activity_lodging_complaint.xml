@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cbg"
+    tools:context=".LodgingComplaint">
+
+    <EditText
+        android:id="@+id/faulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="10dp"
+        android:background="#701a1543"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20dp"
+        android:hint="Email of Faulty"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/reviewer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="10dp"
+        android:background="#701a1543"
+        android:drawableLeft="@drawable/ic_baseline_reviewer_24"
+        android:drawablePadding="20dp"
+        android:hint="Email of Reviewer"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+    <EditText
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/reviewer"
+        android:layout_marginTop="-2dp"
+        android:layout_marginBottom="10dp"
+        android:background="#701a1543"
+        android:drawableLeft="@drawable/ic_baseline_detail_24"
+        android:drawablePadding="20dp"
+        android:hint="Complaint Title"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/complaint"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@+id/ctitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="93dp"
+        android:background="#701a1543"
+        android:drawableLeft="@drawable/ic_baseline_detail_24"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Detailed Complaint"
+        android:inputType="textMultiLine"
+        android:textColor="@color/white"
+
+        android:textColorHint="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/complaint"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#1a1543"
+        android:text="Submit" />
+
+    <ImageButton
+        android:id="@+id/vbtn"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@id/complaint"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="-72dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="20dp"
+        android:background="#1a1543"
+        android:src="@drawable/ic_baseline_mic_24" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/filebtn"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/complaint"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="286dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#1a1543"
+        android:text="Evidence" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/engbtn"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/complaint"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#1a1543"
+        android:text="English" />
+
+</RelativeLayout>

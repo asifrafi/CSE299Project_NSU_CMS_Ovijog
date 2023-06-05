@@ -8,40 +8,58 @@ import 'semantic-ui-css/semantic.min.css';
 import { Router } from 'next/router';
 
 class MyApp extends App {
-    static async getInitialProps({ Component, ctx }) {
-        //console.log(ctx);
-        const { token } = parseCookies(ctx);
+  static async getInitialProps({ Component, ctx }) {
+    //console.log(ctx);
+    const { token } = parseCookies(ctx);
 
-        let pageProps = {};
+    let pageProps = {};
 
-        const protectedRoutes =
-            ctx.pathname === '/';
+    const protectedRoutes =
+      ctx.pathname === '/' ||
+      ctx.pathname === '/complain' ||
+      ctx.pathname === '/review' ||
+      ctx.pathname === '/create-complain' ||
+      ctx.pathname === '/resolved-complains' ||
+      ctx.pathname === '/past-complain' ||
+      ctx.pathname === '/registerAccount' ||
+      ctx.pathname === '/user' ||
+      ctx.pathname === '/complain-against';
 
-        if (!token) {
-            protectedRoutes && redirectUser(ctx, '/login');
-        } else {
-            if (Component.getInitialProps) {
-                pageProps = await Component.getInitialProps(ctx);
-            }
+    if (!token) {
+      protectedRoutes && redirectUser(ctx, '/login');
+    } else {
+      if (Component.getInitialProps) {
+        pageProps = await Component.getInitialProps(ctx);
+      }
 
-            try {
-                const res = await axios.get(`${baseUrl}/api/v1/user/me`, {
-                    headers: { Authorization: token },
-                });
+      try {
+        const res = await axios.get(`${baseUrl}/api/v1/user/me`, {
+          headers: { Authorization: token },
+        });
 
-                const { user } = res.data;
+        const { user } = res.data;
 
-                //if (user) !protectedRoutes && redirectUser(ctx, '/');
+        //if (user) !protectedRoutes && redirectUser(ctx, '/');
 
-                pageProps.user = user;
-            } catch (error) {
-                destroyCookie(ctx, 'token');
-                redirectUser(ctx, '/login');
-            }
-        }
-
-        return { pageProps };
+        pageProps.user = user;
+      } catch (error) {
+        destroyCookie(ctx, 'token');
+        redirectUser(ctx, '/login');
+      }
     }
+
+    return { pageProps };
+  }
+
+  render() {
+    const { Component, pageProps } = this.props;
+
+    return (
+      <Layout {...pageProps}>
+        <Component {...pageProps} />
+      </Layout>
+    );
+  }
 }
 
 export default MyApp;
