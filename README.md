@@ -19,7 +19,7 @@ In future we're Planning To Create a Mobile App
 * Cloud storage: Cloudinary
 * Authentication: JWT, BCrypt
 * Hosting: Not Decided Yet
-* Android App: Java,REST API,Gradle (Planned for Future) 
+* Android App: Java,REST API,Gradle 
 
 #### Installation 
 
