@@ -5,4 +5,6 @@ const router = express.Router();
 
 router.route('/').post(authController.login);
 
+router.route('/loginmobile').post(authController.loginMobile);
+
 module.exports = router;
