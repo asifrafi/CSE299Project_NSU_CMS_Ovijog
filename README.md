@@ -1,8 +1,8 @@
 
 # NSU Ovijog - CMS For North South University
 
-NSU Ovijog is a complaint management system designed specifically for North South University (NSU) in Bangladesh. It provides a secure and user-friendly platform for NSU students, faculty, and staff to submit complaints and have them addressed in a timely and efficient manner. This is still WIP.
-In future we're Planning To Create a Mobile App
+NSU Ovijog is a complaint management system designed specifically for North South University (NSU) in Bangladesh. It provides a secure and user-friendly platform for NSU students, faculty, and staff to submit complaints and have them addressed in a timely and efficient manner. 
+In future we're Planning To Create a Mobile App ( Completed)
 #### Features
 
 * User authentication and management system
